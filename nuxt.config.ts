@@ -1,6 +1,11 @@
+import commonjs from '@rollup/plugin-commonjs';
+
 export default {
   nitro: {
     preset: 'vercel-edge',
+    rollupConfig: {
+      external: ['mongodb', 'puppeteer'],
+    },
   },
   build: {
     transpile: ["mongoose"],
@@ -14,3 +19,4 @@ export default {
     mongoUrl: process.env.MONGODB_URI,
   },
 };
+

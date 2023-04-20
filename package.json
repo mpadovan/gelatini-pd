@@ -19,6 +19,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@rollup/plugin-commonjs": "^24.1.0",
     "mongoose": "^7.0.4",
     "puppeteer": "^19.9.1"
   }
